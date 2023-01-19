@@ -1,3 +1,14 @@
+#[=[
+usage:
+
+```
+include(UseClang) # 该行必须在project()之前
+project(helloworld VERSION 0.0.1.456)
+check_clang_compile_flag() # 该行必须在project()之后
+
+```
+
+]=]
 cmake_minimum_required(VERSION 3.10)
 
 if(NOT OVERRIDES_DIR)
