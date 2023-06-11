@@ -19,6 +19,7 @@ include(UseClang)
 # for show_var
 include(Printing)
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS, 1)
 project(helloworld VERSION 0.0.1.456)
 check_clang_compile_flag()
 

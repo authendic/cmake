@@ -10,6 +10,7 @@ fetchcontent_makeavailable(git_cmake)
 list(APPEND CMAKE_MODULE_PATH ${git_cmake_SOURCE_DIR})
 
 include(UseClang)
+set(CMAKE_EXPORT_COMPILE_COMMANDS, 1)
 project(helloworld VERSION 0.0.1.456)
 check_clang_compile_flag()
 

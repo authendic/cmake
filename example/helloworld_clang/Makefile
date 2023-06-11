@@ -10,11 +10,9 @@ all:
 	test -e $(build_dir)
 	cmake -B $(shell realpath $(build_dir))
 	cmake --build $(build_dir)
-	$(build_dir)/helloworld
-
 
 clean:
-	rm -Rf ./build/*
+	(cd ./build/ && rm -Rf CMakeCache.txt CMakeFiles cmake_install.cmake Makefile)
 
 deepclean:
 	rm -Rf $(shell realpath $(build_dir))
