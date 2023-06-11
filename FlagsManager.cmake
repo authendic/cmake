@@ -27,3 +27,5 @@ function(flags_make_str name)
     string (REPLACE ";" " " FLAGS_STR "${tmpFLAGS_list}")
     set(${name} ${FLAGS_STR} PARENT_SCOPE)
 endfunction()
+
+include(Printing)
